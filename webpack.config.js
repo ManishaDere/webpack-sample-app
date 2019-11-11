@@ -1,5 +1,6 @@
 var webpack = require('webpack'),
-    path = require('path');
+    path = require('path'),
+    CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	mode: "development",
@@ -31,5 +32,10 @@ module.exports = {
         },
       ]
   },
+  plugins: [
+    new CopyWebpackPlugin([{
+      from: './*.html'
+    }])
+  ],
   watch: true
 }
