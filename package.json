@@ -19,6 +19,7 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "tailwindcss": "^1.1.3"
   }
 }
