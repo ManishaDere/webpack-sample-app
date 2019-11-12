@@ -23,8 +23,8 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([{
-      from: './*.html'
+      from: './public/*.html', to: 'index.html'
     }])
   ],
-  // watch: true
+  watch: true
 }
