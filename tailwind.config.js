@@ -1,7 +1,13 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {},
+    container: {
+      center: true,
+      padding: '2rem'
+    },
   },
-  variants: {},
+  variants: {
+    display: ['responsive', 'hover', 'focus'],
+  },
   plugins: []
 }

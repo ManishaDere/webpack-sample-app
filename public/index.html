@@ -8,28 +8,32 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
 </head>
 <body class="text-gray-700 bg-white" style="font-family: 'Source Sans Pro', sans-serif">
-	<nav>
-		<div class="container mx-auto px-6 py-2 flex justify-between items-center">
-			<a class="font-bold text-2xl lg:text-4xl" href="#">
-				SHMW
+	<header>
+		<div class="flex justify-center">
+			<a href="#/" class="brand-logo">
+				<img src="../assets/images/logo_bnd_3535.gif" class="img-responsive" alt="logo brand">
 			</a>
-			<div class="block lg:hidden">
-				<button class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
-					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-						<title>Menu</title>
-						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-					</svg>
-				</button>
-			</div>
-			<div class="hidden lg:block">
-				<ul class="inline-flex">
-					<li><a class="px-4 font-bold" href="/">Home</a></li>
-					<li><a class="px-4 hover:text-gray-800" href="#">About</a></li>
-					<li><a class="px-4 hover:text-gray-800" href="#">Contact</a></li>
-				</ul>
+		</div>
+		<div class="container mx-auto px-10">
+			<a href="#/brands/" class="designers-menu">DESIGNERS</a>
+		</div>
+	</header>
+	<div class="flex">
+		<div class="sidebar text-gray-700 text-center px-4 py-2 m-2 w-1/5">
+			<form>
+				<label class="block text-gray-700 text-sm font-bold mb-2" for="search">
+					Shop by Keyword
+				 </label>
+				 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="search" type="text" placeholder="Search">
+			</form>
+		</div>
+		<div class="main text-gray-700 text-center px-4 py-2 m-2 w-4/5">
+			Products display
+			<div id="products-list" class="flex">
 			</div>
 		</div>
-	</nav>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
 	<script src="bundle.js"></script>
 </body>
 </html>
